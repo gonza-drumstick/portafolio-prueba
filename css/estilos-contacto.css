@@ -29,17 +29,16 @@
 	display: block;
 	text-align: center;
 	font-size: 20px;
-	border: 2px solid #8B0202;
-	background-color: #000;
+	border: 2px solid #000;
+	background-color: #ccc;
 	border-radius: 50px;
-	color: #8B0202;
+	color: #000;
 	margin: 10px;
 	padding: 8px;
 }
 
 .side-bar a:hover{
-	background-color: #8B0202;
-	border: 2px solid #000;
+	background-color: #2f89fc;
 	color: #000;
 	transition: .5s all;
 }
