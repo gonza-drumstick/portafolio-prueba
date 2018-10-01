@@ -157,6 +157,7 @@
 	width: 48%;
 	color: #fafafa;
 	opacity: 0.3;
+	padding: 20px;
 }
 
 .trabajo:hover{
@@ -166,7 +167,7 @@
 
 .trabajo .img img{
 	width: 100%;
-	height: auto;
+	height: 300px;
 }
 
 .trabajo .botones{
