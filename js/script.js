@@ -39,18 +39,19 @@ $(document).ready(function(){
 
 
         // -----MENU PEGAJOSO-----
+        
+	        var altura = $('.menu').offset().top;
+			var menu = $('.menu');
 
-        var altura = $('.menu').offset().top;
-		var menu = $('.menu');
+			
+			$(window).on('scroll', function(){
+				if ( $(window).scrollTop() > altura ){
+					menu.addClass('menu-fixed');
 
-		$(window).on('scroll', function(){
-			if ( $(window).scrollTop() > altura ){
-				menu.addClass('menu-fixed');
-
-			} else {
-				menu.removeClass('menu-fixed');
-			}
-		});
-
+				} else {
+					menu.removeClass('menu-fixed');
+				}
+			});
+		
 	
 });

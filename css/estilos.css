@@ -120,7 +120,7 @@
 
 
 .acerca-de h2{
-	margin: 30px; 
+	margin: 3rem; 
 	font-size: 2.5rem;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .acerca-de p{
-	margin: 3rem 10rem;
+	margin: 3rem ;
 	font-size: 1.5rem;
 	letter-spacing: .2rem;
 	line-height: 3rem;
@@ -218,6 +218,10 @@ footer .contenedor-contacto h3{
  padding: 20px;
 }
 
+footer .contenedor-contacto p{
+	padding: 10px;
+}
+
 footer .contacto .contenedor-contacto{
 	width: 40%;
 }
@@ -272,4 +276,47 @@ footer .contacto form input[type="submit"]:hover{
 
 .pie-pagina i{
 	padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+	
+	.front-end .texto .nombre{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.front-end .texto .profesion{
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.menu{
+		display: block;
+	}
+
+	.menu .item-menu{
+		width: 100%;
+		padding: 10px;
+		font-size: 1rem
+		background-color:#000;
+		border: 1px solid #48d1cc;
+	}
+
+	.trabajo{
+		width: 100%;
+	}
+
+	footer .contacto{
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	footer .contacto .contenedor-contacto{
+		width: 80%;
+	}
+
+	footer .contacto .contenedor-formulario{
+		width: 80%;
+	}
 }
