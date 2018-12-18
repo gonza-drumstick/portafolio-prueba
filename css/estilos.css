@@ -158,11 +158,13 @@
 	color: #fafafa;
 	opacity: 0.3;
 	padding: 20px;
+	border: 1px solid transparent;
 }
 
 .trabajo:hover{
 	opacity: 1;
 	transition: 1s all;
+	border: 1px solid rgba(255,255,255, .5);
 }
 
 .trabajo .img img{
@@ -176,19 +178,20 @@
 
 .trabajo .botones a{
 	text-decoration: none;
+	margin: 10px;
 }
 
-.botones a i{
-	color: #fafafa;
+.trabajo .botones a i{
 	padding: 10px;
-	border: 2px solid transparent;
-	border-radius: 100%;
+	border-radius: 20%;
+	color: #fafafa;
+	border: 1.5px solid #fafafa;
 }
 
-.botones a i:hover{
+.trabajo .botones a i:hover{
 	color: #48d1cc;
-	border: 2px solid #48d1cc;
 	transition: 1s all;
+	border: 1.5px solid #48d1cc;
 }
 
 .trabajo .texto{
@@ -216,6 +219,10 @@ footer .contenedor-contacto h3{
  text-align: center;
  font-size: 40px;
  padding: 20px;
+}
+
+footer .contenedor-contacto h4{
+	margin: 5px;
 }
 
 footer .contenedor-contacto p{
