@@ -27,28 +27,22 @@
     </div>
 
     <div class="contenedor-menu">
+      <button class="menu-toggle" id="btn-toggle">☰</button>
       <div class="menu">
-        <div class="item-menu" id="btn-inicio">Inicio</div>
-        <div class="item-menu" id="btn-acerca-de">Acerca de</div>
-        <div class="item-menu" id="btn-trabajos">Trabajos</div>
-        <div class="item-menu" id="btn-contacto">Contacto</div>
+        <div class="menu__item" id="btn-inicio">Inicio</div>
+        <div class="menu__item" id="btn-acerca-de">Acerca de</div>
+        <div class="menu__item" id="btn-trabajos">Trabajos</div>
+        <div class="menu__item" id="btn-contacto">Contacto</div>
       </div>
     </div>
-
   </div>
 
   <section class="acerca-de" id="acerca-de">
-      
     <img src="img/gonza.jpg" alt="">
-    
     <h2>Hola, Soy Gonzalo - Desarrollador Front-End</h2>
     <div class="linea"></div>
-    <p>
-      Empecé a estudiar desarrollo frontend por mi cuenta desde principios de 2017, soy una persona que aprende rápido y me gusta estar rodeado de gente de la cuál aprender.
-
-      Mi framework preferido para desarrollar interfaces de usuario es Ract Js y disfruto dando estilos con Sass.
-      En mi tiempo libre, además de aprender frontend, toco la bateria y doy clases.
-    </p>
+    <p>Empecé a estudiar desarrollo frontend por mi cuenta desde principios de 2017, soy una persona que aprende rápido y me gusta estar rodeado de gente de la cuál aprender.</p>
+    <p>Mi framework preferido para desarrollar interfaces de usuario es Ract Js y disfruto dando estilos con Sass. En mi tiempo libre, además de aprender frontend, toco la bateria y doy clases.</p>
   </section>
 
   <section class="trabajos" id="trabajos">
@@ -56,11 +50,15 @@
       
       <div class="trabajo">
         <div class="img">
-          <img src="img/rudimentos2.png" alt="">
+          <picture>
+            <source srcset="img/rudimentos2.webp" type="image/webp">
+            <source srcset="img/rudimentos2.jpg" type="image/jpeg">
+            <img src="img/rudimentos2.jpg" alt="">
+          </picture>
         </div>
 
           <div class="botones">
-            <a href="https://drumsweb.netlify.com/" target="_blank" ><i class="fas fa-search"></i></a>
+            <a href="https://drumsweb.netlify.com/" target="_blank" ><i class="fas fa-globe"></i></a>
             <a href=https://github.com/gonza-drumstick/drumswebtarget="_blank"><i class="fab fa-github"></i></i></a>
           </div>
           <div class="texto">
@@ -70,11 +68,15 @@
 
       <div class="trabajo">
         <div class="img">
-          <img src="img/gastosemanal.jpeg" alt="">
+          <picture>
+            <source srcset="img/gastosemanal.webp" type="image/webp">
+            <source srcset="img/gastosemanal.jpg" type="image/jpeg">
+            <img src="img/gastosemanal.jpg" alt="">
+          </picture>
         </div>
 
           <div class="botones">
-            <a href="https://gastosemanal.netlify.com/" target="_blank" ><i class="fas fa-search"></i></a>
+            <a href="https://gastosemanal.netlify.com/" target="_blank" ><i class="fas fa-globe"></i></a>
             <a href="https://github.com/gonza-drumstick/gasto-semanal" _blank"><i class="fab fa-github"></i></i></a>
           </div>
           <div class="texto">
@@ -84,11 +86,15 @@
 
       <div class="trabajo">
         <div class="img">
-          <img src="img/dot.png" alt="">
+          <picture>
+            <source srcset="img/dot.webp" type="image/webp">
+            <source srcset="img/dot.jpg" type="image/jpeg">
+            <img src="img/dot.jpg" alt="">
+          </picture>
         </div>
 
           <div class="botones">
-            <a href="https://dot-tattoo.netlify.com/" target="_blank" ><i class="fas fa-search"></i></a>
+            <a href="https://dot-tattoo.netlify.com/" target="_blank" ><i class="fas fa-globe"></i></a>
             <a href="https://github.com/gonza-drumstick/dot" target="_blank"><i class="fab fa-github"></i></i></a>
           </div>
           <div class="texto">
@@ -98,10 +104,14 @@
 
       <div class="trabajo">
         <div class="img">
-          <img src="img/ciruja.png" alt="">
+          <picture>
+            <source srcset="img/ciruja.webp" type="image/webp">
+            <source srcset="img/ciruja.jpg" type="image/jpeg">
+            <img src="img/ciruja.jpg" alt="">
+          </picture>
         </div>
         <div class="botones">
-          <a href="https://ciruja.netlify.com/" target="_blank"><i class="fas fa-search"></i></a>
+          <a href="https://ciruja.netlify.com/" target="_blank"><i class="fas fa-globe"></i></a>
           <a href="https://github.com/gonza-drumstick/ciruja" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="texto">
@@ -111,10 +121,14 @@
 
       <div class="trabajo">
         <div class="img">
-          <img src="img/portfolio.png" alt="">
+          <picture>
+            <source srcset="img/portfolio.webp" type="image/webp">
+            <source srcset="img/portfolio.jpg" type="image/jpeg">
+            <img src="img/portfolio.jpg" alt="">
+          </picture>
         </div>
         <div class="botones">
-          <a href="https://portafolio-personal.netlify.com/" target="_blank"><i class="fas fa-search"></i></a>
+          <a href="https://portafolio-personal.netlify.com/" target="_blank"><i class="fas fa-globe"></i></a>
           <a href="https://github.com/gonza-drumstick/portafolio" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="texto">
@@ -124,10 +138,14 @@
     
       <div class="trabajo">
         <div class="img">
-          <img src="img/auto.png" alt="">
+          <picture>
+            <source srcset="img/auto.webp" type="image/webp">
+            <source srcset="img/auto.jpg" type="image/jpeg">
+            <img src="img/auto.jpg" alt="">
+          </picture>
         </div>
         <div class="botones">
-          <a href="https://automovi.netlify.com/" target="_blank"><i class="fas fa-search"></i></a>
+          <a href="https://automovi.netlify.com/" target="_blank"><i class="fas fa-globe"></i></a>
           <a href="https://github.com/gonza-drumstick/automovi" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="texto">

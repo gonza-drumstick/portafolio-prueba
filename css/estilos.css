@@ -6,10 +6,7 @@
 }
 
 .contenedor{
-	background-image: url(../img/fondo2.png);
-	background-size: cover;
-  	background-position: center ;
-  	background-repeat: no-repeat;
+	background-image: linear-gradient(to right, #171616 50%, #333 50%);
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -49,7 +46,7 @@
 	border-bottom: 3px solid #48d1cc;
 }
 
-.flecha i{
+.flecha i {
 	color: #48d1cc;
 	font-size: 3rem;
 	font-weight: 100px;
@@ -60,9 +57,9 @@
 }
 
 @keyframes bouncearrow{
-	0%{top:0px;}
-	50%{top:20px; color:#fafafa;}
-	100%{top:0px;}
+	0% { transform: translateY(0); }
+	50% { transform: translateY(20px); color:#fafafa; }
+	100% { transform: translateY(0); }
 }
 
 .menu{
@@ -75,15 +72,15 @@
 /*Clase para Jquery*/
 
 .menu-fixed {
-    position:fixed;
-	z-index:1000;
+	background-color: black;
+	position: fixed;
+	top: 0;
 	width: 100%;
-	background-color: #000;
-	top:0;
+	z-index: 1000;
 }
 /*-----------------*/
 
-.item-menu{
+.menu__item {
 	width: 25%;
 	padding: 30px 0;
 	text-align: center;
@@ -95,7 +92,7 @@
 	color: #48d1cc;
 }
 
-.item-menu:hover{
+.menu__item:hover{
 	transition: all 1s;
 	cursor: pointer;
 	background-color: #48d1cc;
@@ -104,7 +101,7 @@
 
 /*-----ACERCA DE-----*/
 
-.acerca-de{
+.acerca-de {
 	background-color: #fafafa;
 	text-align: center;
 	padding: 30px;
@@ -118,15 +115,14 @@
 	margin: auto;
 }
 
-
-.acerca-de h2{
+.acerca-de h2 {
 	margin: 3rem; 
 	font-size: 2.5rem;
 }
 
-.linea{
+.linea {
 	border-bottom: 8px solid #48d1cc;
-	width: 4%;
+	width: 10vw;
 	margin: 10px auto;
 }
 
@@ -134,7 +130,7 @@
 	margin: 3rem ;
 	font-size: 1.5rem;
 	letter-spacing: .2rem;
-	line-height: 3rem;
+	line-height: 1.8;
 }
 
 /*-----TRABAJOS-----*/
@@ -153,30 +149,40 @@
 	border-top: 5px solid #48d1cc;
 }
 
-.trabajo{
+.trabajo {
 	width: 48%;
 	color: #fafafa;
-	opacity: 0.3;
 	padding: 20px;
 	border: 1px solid transparent;
 }
 
-.trabajo:hover{
-	opacity: 1;
+.trabajo:hover {
 	transition: 1s all;
 	border: 1px solid rgba(255,255,255, .5);
 }
 
-.trabajo .img img{
-	width: 100%;
-	height: 300px;
+.trabajo:hover .img img, .trabajo:hover .img picture {
+	transform: scale(1.125);
 }
 
-.trabajo .botones{
+.trabajo .img {
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+
+.trabajo .img img, .trabajo .img picture {
+	display: block;
+	height: auto;
+	transition: transform 1s;
+	width: 100%;
+	will-change: transform;
+}
+
+.trabajo .botones {
 	margin: auto;
 }
 
-.trabajo .botones a{
+.trabajo .botones a {
 	text-decoration: none;
 	margin: 10px;
 }
@@ -285,8 +291,25 @@ footer .contacto form input[type="submit"]:hover{
 	padding: 5px;
 }
 
+.menu-toggle {
+	background: none;
+	border: none;
+	color: white;
+	display: none;
+	font-size: 2em;
+	mix-blend-mode: difference;
+	padding: .25em .5em;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1001;
+}
+
 @media only screen and (max-width: 800px) {
-	
+	.menu-toggle {
+		display: block;
+	}
+
 	.front-end .texto .nombre{
 		font-size: 1.5rem;
 		text-align: center;
@@ -297,16 +320,33 @@ footer .contacto form input[type="submit"]:hover{
 		text-align: center;
 	}
 
-	.menu{
-		display: block;
+	.menu {
+		background: black;
+		display: none;
+		padding-top: 3.5em;
+		position: fixed;
+		top: 0;
+		width: 100%;
 	}
 
-	.menu .item-menu{
+	.menu__item {
 		width: 100%;
 		padding: 10px;
-		font-size: 1rem
-		background-color:#000;
+		font-size: 1rem;
+		background-color: #000;
 		border: 1px solid #48d1cc;
+	}
+
+	.acerca-de {
+		text-align: left;
+	}
+
+	.acerca-de h2, .acerca-de p {
+		margin: 3rem 0;
+	}
+
+	.acerca-de p {
+		font-size: 1.25rem;
 	}
 
 	.trabajo{
